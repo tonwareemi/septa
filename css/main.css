@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    background-color:  #009688;
+}
+
+/*-- Nav--*/
+header{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+    font-style: italic;
+    font-size: 30px;
+    display:inline-block;
+    color: white;
+}
+
+nav{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Times New Roman;
+    position: relative;
+    display: inline-block;
+    transition: 300ms all linear;
+}
+
+
+nav a:hover{
+    border-bottom: 3px solid red;
+}
+
+main{
+    flex:1 0 auto;
+    background: white;
+    margin-top: 25px;
+}
+
+main h1{
+  margin: 30px auto;
+  color: black;
+  display: block;
+  text-align: center;
+  font-family: Times New Roman;
+}
+
+main h2{
+    text-align: center;
+}
+
+main h3{
+    font-size: 30px;
+}
+
+p{
+   font-size: 16px; 
+}
+
+main input[type="radio"]{
+    display: none;
+}
+
+.container{
+    border: 3px solid black;
+    margin: 20px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: #43A047;
+    color: white;
+    z-index: 2;
+}
+
+.accordion:last-child > label, .accordion:last-child > accodion-content{
+    border: none;
+}
+
+.accodion-content{
+    border-bottom: 1px solid black;
+    padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    z-index: -1;
+    transition: : 1s linear;
+}
+
+input:checked ~.accodion-content {
+    padding: 15px;
+    opacity: 1;
+    max-height: 500px;
+    z-index: 1;
+}
+
+footer{
+    background-color: #eee;
+    color:black;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: 40px;
+}
+
+footer p{
+    margin-bottom: 30px;
+}
+
+.social a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin: 3px 1px;
+	font-size: 14px;
+	background: #d5d5d5;
+	color: #fff;
+	border-radius: 50%;
+    margin: 30px;
+	-webkit-transition: background 1s linear;
+	-moz-transition: background 1s linear;
+	-ms-transition: background 1s linear;
+	-o-transition: background 1s linear;
+	transition: background 1s linear;
+}
+
+.social a:hover {
+    background: bisque;
+}
+
+@media (max-width:480px){
+    
+    .menu{
+      position: absolute;
+      display: flex;
+      top: 5px;
+      right: 10px;
+      height: 50px;
+      width: 50px;
+      z-index: 5;
+      text-align: center;
+      align-items:center;
+    }
+    
+    .bugger{
+      width: 50px;
+      height: 7px;
+      border-radius: 10px;
+      background-color: white;
+      transition-duration: 500ms;
+      transition-property: all;
+      transition-timing-function: linear;
+    }
+    
+    .bugger::after,.bugger::before{
+      content: " ";
+      position: absolute;
+      left: 0px;
+      width: 50px;
+      height: 7px;
+      border-radius: 10px;
+      transition-duration: 500ms;
+      transition-property: all;
+      transition-timing-function: linear;
+      background-color:  white;
+    }
+    
+    .bugger::after{
+      transform: translateY(15px);
+    }
+    
+    .bugger::before{
+      transform: translateY(-15px);
+    }
+    
+    .open .bugger{
+      background-color: transparent;
+    }
+    
+    .open .bugger::after{
+      transform: rotate(45deg);
+      background-color:  #009688;
+    }
+    
+    .open .bugger::before{
+      transform: rotate(-45deg);
+      background-color:  #009688;
+    }
+    
+    nav{
+      display: block;
+      position: fixed;
+      height: 0px;
+      overflow: hidden;
+      width: 100%;
+      background-color: white;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+      transition-duration: 500ms;
+      transition-property: height;
+      transition-timing-function: linear;
+    }
+    
+    .links{
+      display: block;
+      height: 100px;
+      width: 60%;
+      margin: 15px 20%;
+      transition-duration: 1s;
+      transition-property: all;
+      border-top: 2px solid   #009688;
+      border-bottom: 3px solid   #009688;
+      text-align: center;
+    }
+    
+    .links:hover{
+      width: 80%;
+      margin: 10%;
+    }
+    
+    .links:hover a{
+      margin-top: 10% ;
+    }
+    
+    nav a{
+      color: black;
+      transition: 1s all linear;
+      position: static;
+      margin-top: 20%;
+      font-size: 17;
+    }
+}
