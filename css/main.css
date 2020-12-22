@@ -5,7 +5,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     position: relative;
-    background-color:  #009688;
+    background-color:  #FFC2C2;
 }
 
 /*-- Nav--*/
@@ -20,7 +20,7 @@ h1{
     font-style: italic;
     font-size: 30px;
     display:inline-block;
-    color: white;
+    color: #010A43;
 }
 
 nav{
@@ -85,8 +85,8 @@ label {
     display: block;
     padding: 10px;
     border-bottom: 1px solid black;
-    background-color: #43A047;
-    color: white;
+    background-color: #FF9D9D;
+    color: black;
     z-index: 2;
 }
 
@@ -131,10 +131,10 @@ footer p{
 	line-height: 35px;
 	margin: 3px 1px;
 	font-size: 14px;
-	background: #d5d5d5;
-	color: #fff;
+	background: white;
+	color: #FFB6B6;
 	border-radius: 50%;
-    margin: 30px;
+  margin: 30px;
 	-webkit-transition: background 1s linear;
 	-moz-transition: background 1s linear;
 	-ms-transition: background 1s linear;
@@ -143,7 +143,8 @@ footer p{
 }
 
 .social a:hover {
-    background: bisque;
+    background: #FFB6B6;
+    color: white;
 }
 
 @media (max-width:480px){
@@ -197,12 +198,12 @@ footer p{
     
     .open .bugger::after{
       transform: rotate(45deg);
-      background-color:  #009688;
+      background-color:  #FFC2C2;
     }
     
     .open .bugger::before{
       transform: rotate(-45deg);
-      background-color:  #009688;
+      background-color:  #FFC2C2;
     }
     
     nav{
@@ -227,8 +228,8 @@ footer p{
       margin: 15px 20%;
       transition-duration: 1s;
       transition-property: all;
-      border-top: 2px solid   #009688;
-      border-bottom: 3px solid   #009688;
+      border-top: 2px solid   #FFC2C2;
+      border-bottom: 3px solid   #FFC2C2;
       text-align: center;
     }
     

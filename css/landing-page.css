@@ -5,10 +5,38 @@ body{
     position: relative;
     margin: 0px;
     padding: 0px;
-    background-color: #009688;
+    background-color: #FFC2C2;
 }
 
-/*-- Navgati r--*/
+h1{
+  color: #010A43;
+}
+
+.septa-middle-text h1{
+  color: #010A43;
+}
+
+.septa-middle-text p{
+  color: white;
+}
+
+footer{
+  background-color: #FF9D9D;
+}
+
+footer a{
+  color: white;
+}
+
+.open .bugger::after, .open .bugger::before{
+  background-color: #FF9D9D;
+}
+
+.bugger,.bugger::after,.bugger::before{
+  background-color: #9E579D;
+}
+
+/*-- Navgation--*/
 header{
   width: 90%;
   display: flex;
@@ -20,7 +48,6 @@ h1{
     font-style: italic;
     font-size: 30px;
     display: inline-block;
-    color: white;
     margin: 10px 0px 0px 0px;
 }
 
@@ -55,7 +82,7 @@ nav a:hover{
   }
     
     .menu{
-      position: fixed;
+      position: absolute;
       display: flex;
       top: 5px;
       right: 10px;
@@ -103,12 +130,10 @@ nav a:hover{
     
     .open .bugger::after{
       transform: rotate(45deg);
-      background-color:  #009688;
     }
     
     .open .bugger::before{
       transform: rotate(-45deg);
-      background-color:  #009688;
     }
     
     nav{
@@ -133,8 +158,8 @@ nav a:hover{
       margin: 15px 20%;
       transition-duration: 1s;
       transition-property: all;
-      border-top: 2px solid  #009688;
-      border-bottom: 3px solid  #009688;
+      border-top: 2px solid  #FF9D9D;
+      border-bottom: 3px solid  #FF9D9D;
       text-align: center;
     }
     
@@ -173,12 +198,10 @@ main{
 
 /*--welcome message--*/
 .septa-middle-text{
-  height: 100vh;
+  height: 80vh;
   width: 95%;
   border-radius: 10px;
   margin: 10px auto;
-  box-shadow: 5px 2px 50px black;
-  box-shadow: -8px -2px 50px black;
   padding: 20vh 0px 0px 0px;
   text-align: center;
 }
@@ -187,7 +210,6 @@ main{
   font-size: 70px;
   display: block;
   width: 100%;
-  color: white;
   margin: 0px;
 }
 
@@ -195,13 +217,11 @@ main{
     font-size: 30px;
     display: block;
     margin: 0px;
-    color: white;
 }
 
 /*--footer--*/
 footer{
     width: 100%;
-    background-color: white;
     text-align: center;
     display: block;
     position: static;
